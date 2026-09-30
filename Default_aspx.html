@@ -1,0 +1,363 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="download_date" content="2026-09-30T17:25:11.451Z"/><link rel="icon" href="https://alunoonline.educacao.rj.gov.br/Images/favicon.ico" type="image/x-icon"><link rel="shortcut icon" href="https://alunoonline.educacao.rj.gov.br/Images/favicon.ico" type="image/x-icon"><title>
+	SEEDUC - Governo do Rio de Janeiro
+</title>
+    <link href="https://alunoonline.educacao.rj.gov.br/Scripts/themes/basic/grid.css" rel="stylesheet" type="text/css"><link href="https://alunoonline.educacao.rj.gov.br/Scripts/themes/jqModal.css" rel="stylesheet" type="text/css"><link href="https://alunoonline.educacao.rj.gov.br/LyceumNet.css" type="text/css" rel="stylesheet">
+    <!--2021-->
+     <link rel="preconnect" href="https://fonts.gstatic.com/"><link href="../../_external/fonts.googleapis.com/css2.family_Open_Sans_ital_wght_0_300_0_400_0_600_0_700_0_800_1_300_1_400_1_600_1_700_1_800_display_swap.css" rel="stylesheet"><link rel="stylesheet" href="../../_external/cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css"><link rel="stylesheet" href="../../_external/cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    
+    <style>
+    .top_inf{position:fixed;width:100%;background:#1E6496;color:#ffffff;box-shadow:0 0.5rem 1rem rgb(0 0 0 / 5%), inset 0 -1px 0 rgb(0 0 0 / 15%);height:65px;font-size:small;font-family:verdana, arial, helvetica;z-index:9999;}
+    .top_outros{position:relative;height:65px;}
+    .top_logo_governo{background-image:url("../images/logo-educacao-branca.png");background-size:cover;width:164px;height:50px;margin:7px auto;position:absolute;left:20px;}
+    .top_logo_gestao{background-image:url("../images/logo-aluno.png");background-size:cover;width:110px;height:30px;margin-top:10px;position:absolute;left:210px;}
+   .tit_pag{position:absolute;top:20px;left:210px;height:20px;width:775px;}
+    .tit_pag > h5{width:260px;}
+    .top_usuario_logado{height:50px;margin:15px auto;position:absolute;left:480px;right:178px;color:white;white-space:nowrap;overflow:hidden;}
+    .top_usuario_logado > span{display:block;}
+    .top_botoes{width:170px;height:50px;margin:7px auto;position:absolute;right:10px;}
+    .buttom-top{text-align:center;width:70px;padding:0px 8px;border:2px solid #1E6496;border-radius:5px;margin:8px 5px 0 5px;color:#1E6496;Background:white;font-size:1em;font-weight:600;font-family:'Verdana', Geneva, sans-serif!important;display:inline-flex;justify-content:space-evenly;align-items:center;}
+    .buttom-top:hover{padding:0px 8px;border:2px solid #ffffff;color:white;Background:#1E6496;font-size:1em;text-decoration:none;}
+    a:link{text-decoration:none;color:#0353ab;}
+    a:visited{text-decoration:none;color:#0353ab;}
+    a:hover{text-decoration:underline;color:#666;}
+    a:active{text-decoration:none;color:#0353ab;}
+    
+    @media (max-width: 1066px) {
+        .tit_pag {
+            margin: unset;
+            display: unset;
+            min-width: unset;
+            max-width: unset;
+            width: unset;
+            height: unset;
+            flex-direction: unset;
+            align-items: unset;
+            text-align: unset;
+            background: unset;
+            padding-top: unset;
+            border-radius: unset;
+        }
+        
+        .conteudo {
+            padding-top: 80px;
+        }
+    }
+    
+    .menu-topo{width:2000px;margin:0px;padding:0px;margin-left:3px;padding-top:1px;border-top:2px solid #dfe6ed;}
+    .menu-topo li a{display:block;height:20px;padding:0px 1px;background:#1E6496;color:#FFF;text-decoration:none;font-size:11px;padding:3px 5px;border-radius:5px;font-family:'Open Sans',Tahoma, Geneva, sans-serif;}
+    .menu-topo li a:hover{text-decoration:underline;}
+    .menu-topo li{list-style:none;float:left;margin-right:2px;}
+    #top_menu{width:2000px;margin:3px 3px;}
+    
+    
+    
+    /*! CSS Used from: https://desenvolvimento.educacao.rj.gov.br/NovoFrontEndConexao2/site.css */
+.top_botoes{width:170px;height:50px;margin:7px auto;position:absolute;right:10px;}
+.imagem-menu{display:inline-block;height:50px;width:50px;background-repeat:no-repeat;background-position:center;background-size:35px;border:1px solid transparent;}
+.imagem-home{background-image:url('../Images/icone-site-04.png');}
+.imagem-ajuda{background-image:url('../Images/icone-site-05.png');}
+.imagem-sair{background-image:url('../Images/icone-site-06.png');}
+a:link{text-decoration:none;color:#0353ab;}
+a:visited{text-decoration:none;color:#0353ab;}
+a:hover{text-decoration:underline;color:#666;}
+a:active{text-decoration:none;color:#0353ab;}
+
+
+    </style>
+        <!-- RybenÃ¡-->
+        <script type="text/javascript" src="../../_external/cdn.rybena.com.br/dom/master/latest/rybena.positionPlayer_left_positionBar_right.js"></script>
+<link href="https://alunoonline.educacao.rj.gov.br/App_Themes/Blue/Editors/styles.css" type="text/css" rel="stylesheet"><link href="https://alunoonline.educacao.rj.gov.br/App_Themes/Blue/Web/styles.css" type="text/css" rel="stylesheet"></head>
+<body onload="moveRelogio();" approot="../">
+
+    <script type="text/javascript" src="https://alunoonline.educacao.rj.gov.br/Scripts/jquery-1.7.1.min.js"></script>
+
+    <script type="text/javascript" src="https://alunoonline.educacao.rj.gov.br/Scripts/jquery.jqGrid.js"></script>
+
+    <script type="text/javascript" src="https://alunoonline.educacao.rj.gov.br/Scripts/js/jqModal.js"></script>
+
+    <script type="text/javascript" src="https://alunoonline.educacao.rj.gov.br/Scripts/MaskTypes.js"></script>
+
+    <form name="aspnetForm" method="post" action="https://alunoonline.educacao.rj.gov.br/AlunoOnline/Config.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="MuKDbDY/alhCLgTiTKJLb1vB/K/bRO+v2JtzSlY0ipQSizlpcMIERBl6iDQ2dwdiBDOoGYIa2YxxTUBvaAwWLSq/IOVi9zDiAm+GmFEjS6wujVRQv1zaVx+NZ2a9nGc6zr2/pkJXljqDOQIjgoRJv8radMBUqQMkczbrT6b+xx8XtMwpON8qLXdAAiVQyTrK9d7TWwDnpn2qomMpOVD0qtC8l7lEwO8ATPU7QivgBVHlCH5Wrx6VXl3q4UWea0Bhwy6wmo/jjjY6AV+pZTMORYhhs2JIxk1u/6xCngQ9HLFDMfSDf9yoC6vwyzCyhg6L3Uf/Yg7MFHiVHdVEdRhync6WbxS/xde+uf8Tww+VJlzyUWTbgVA6bcmm8S1a9833hobPB8TWcTbz8CZv0xyB+AWfbeep3RUbw7CLYhT6wk9d+lcF5fO5cmQcH//t1Iw5cZA6UA==">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="WebResource.axd.d_ve0ho7hyr6l2X5Mh-yYBMHYqRsuhqevfuEtrxThujkUI_-l0qPXwEqySfLPgJHya_zAMj4iCRidNUR3SI-E1ErTQQgw1_t_639191407580000000.js" type="text/javascript"></script>
+
+<script language="javascript" src="scripts/Help.js"></script>
+<script src="WebResource.axd.d_fPCAzRdpY_7YDAGhhSrrTT3mYANBXuZmwrW7tCMbTAX7hgc4WQBfxnPmr05asZauW-XMWotvoFh9NDA1MPVsq76v1atAQiJ2fJJa_VZ2DkMkV4Z9oWBt1RXKYA5FuSw6txGc5y-fGRwMeETeB5ghefz2OrE1_t_635719612030191336.js" type="text/javascript"></script><script language="JavaScript" src="Scripts/TPageLyceum.js"></script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="0AB64073">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="4rakG7D5qnkGEHA1kui8YfZkIzzXpx+cbEZn7fsO+/rGLLvf908cktweE0vJ9mP1o9JM0R9VNiqD/pYx8D6JMSMXD3/gF4ffM+qez3Kg7Wfs5mCd">
+</div>
+    
+    <!-- Aqui Ã© a Header "top_inf"-->
+    <div class="top_inf">
+        
+        <div class="top_outros">
+                
+            <!-- LOGO -->
+            <div class="top_logo_governo"></div>
+            
+            <div class="top_logo_gestao"></div>
+			
+			<div class="tit_pag">
+			    <h5 align="left">
+				    Menu
+				</h5>
+   			</div>
+   			
+   			<!-- Dados do usuÃ¡rio logado -->  
+            <div class="top_usuario_logado">
+                <span><b>MatrÃ­cula:</b> 202617660715733 (IP: 45.161.5.132)</span>
+                <span><div id="divHoraData"></div></span>
+            </div>
+            
+            <div class="top_botoes">
+                <!-- BotÃµes - Home -->   
+                <a id="ctl00_hlInicio" title="InÃ­cio" class="imagem-menu imagem-home" href="../Default_aspx.html"><span class="imagem-home"></span></a>
+                
+                <!-- BotÃµes - Ajuda -->    
+                <a id="ctl00_hlHelp" title="Ajuda" class="imagem-menu imagem-ajuda" onclick="__Help(); return(false);" style="cursor:pointer;"><span class="imagem-ajuda"></span></a>
+                
+                <!-- BotÃµes - Sair -->
+                <a id="ctl00_lbSair" title="Logoff" class="imagem-menu imagem-sair" href="javascript:__doPostBack('ctl00$lbSair','')"><span class="imagem-sair"></span></a>
+            </div>
+        </div>
+        
+        <!-- NAVBAR - MENU INTERNO -->
+        <div class="top_menu">
+	        <ul class="menu-topo">
+		        <li>
+			        <a id="ctl00_lnk1" href="javascript:__doPostBack('ctl00$lnk1','')">Boletim</a>
+		        </li>
+
+		        <li>
+			        <a id="ctl00_lnk10" href="javascript:__doPostBack('ctl00$lnk10','')">Conta para acessar Classroom</a> 
+		        </li>
+
+                <li>
+			        <a id="ctl00_lnk3" href="javascript:__doPostBack('ctl00$lnk3','')">Acompanhamento Classroom</a>
+		        </li>
+	        </ul>
+        </div>
+    </div>
+    
+    
+    <!-- CONTEUDO DO SITE -->
+    <div id="conteudo" class="conteudo" style="">
+        
+
+<style>
+    #modalFundo {
+        display: none;
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(0,0,0,0.6);
+        z-index: 9999;
+        animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+
+    #modalCaixa {
+        background: white;
+        width: 90%;
+        max-width: 480px;
+        margin: 120px auto;
+        border-radius: 12px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.4);
+        position: relative;
+        overflow: hidden;
+        animation: subir 0.3s ease;
+    }
+
+    @keyframes subir {
+        from { transform: translateY(-30px); opacity: 0; }
+        to   { transform: translateY(0); opacity: 1; }
+    }
+
+    #btnFechar {
+        position: absolute;
+        top: 8px;
+        right: 12px;
+        font-size: 22px;
+        font-weight: bold;
+        cursor: pointer;
+        color: #444;
+        transition: 0.2s;
+    }
+
+    #btnFechar:hover {
+        color: #e60000;
+        transform: scale(1.2);
+    }
+
+    #tituloModal {
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+        color: #1E74D9;        /* azul */
+        margin-top: 20px;
+        margin-bottom: 15px;
+        font-family: Arial;
+    }
+
+    #modalConteudo {
+        padding: 0 20px 20px 20px;
+        text-align: center;
+    }
+
+    #modalConteudo img {
+        width: 100%;
+        max-width: 420px;
+        border-radius: 8px;
+    }
+</style>
+
+<script>
+    function abrirModal() {
+        document.getElementById("modalFundo").style.display = "block";
+    }
+
+    function fecharModal() {
+        document.getElementById("modalFundo").style.display = "none";
+    }
+
+
+    window.onload = function() {
+
+        document.getElementById("btnFechar").onclick = fecharModal;
+        abrirModal();
+    };
+</script>
+
+<!-- Modal -->
+<div id="modalFundo">
+    <div id="modalCaixa">
+        <span id="btnFechar">Ã—</span>
+
+
+        <div id="tituloModal">Fique Ligado!!</div>
+
+        <div id="modalConteudo">
+            <img src="https://alunoonline.educacao.rj.gov.br/Images/popup_segundachance.png" alt="Segunda Chance">
+        </div>
+    </div>
+</div>
+
+    <table class="mx-5" cellspacing="0" cellpadding="0" border="0" style="border-style:None;border-collapse:collapse;">
+	<tbody><tr>
+		<td valign="top" style="width:325px;"><div class="mnbox_int"><div class="mnbox_tit"><h4>Aluno Online</h4></div><ul><li><a href="Academico/Boletim_aspx.html">Consulta ao Boletim do aluno</a></li><li><a href="Academico/GoogleEducation_aspx.html">Conta para acessar Classroom</a></li><li><a href="Academico/AcompanhamentoClassroom_aspx.html">Acompanhamento Classroom</a></li></ul></div></td>
+	</tr>
+</tbody></table>
+
+    </div>
+    <br>
+    
+    <!-- Redes Sociais 
+    <div>
+        <table width="30%" align="center">
+            <tr>
+                <td colspan="3" align="center">
+                    <h3>
+                        Curta as redes sociais da Seeduc e acompanhe todas as novidades
+                    </h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://facebook.com/seeducrj" target="_blank">
+                        <img src="../Images/facebook_ce_pe.png" alt="Facebook" title="Facebook" /></a>
+                </td>               
+                <td>
+                    <a href="https://www.youtube.com/user/seeducrio" target="_blank">
+                        <img src="../Images/youtube_ce_pe.png" alt="Youtube" title="Youtube" /></a>
+                </td>
+                <td>
+                    <a href="https://www.instagram.com/seeducrj/" target="_blank">
+                        <img src="../Images/instagram_ce_pe.png" alt="Instagram" title="Instagram" /></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+                -->
+    
+    
+    <!-- FOOTER 
+    <div class="bas-inf">
+        <div class="bas">
+            &copy; Todos os direitos reservados -
+            2026
+            | versÃ£o
+            2.0.0.46728P</div>
+    </div>-->
+    
+    <div class="footer">
+        <div class="copyright">
+            © Todos os direitos reservados SEEDUC - RJ -
+            2026
+            | versÃ£o
+            
+        </div>
+        
+        
+        <!-- A Direita - Redes sociais -->
+        <div class="midias-sociais">
+            <div class="icons-midias">
+                <a href="https://www.facebook.com/seeducRJ" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+                <a href="https://www.instagram.com/seeducrj/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://www.youtube.com/channel/UCzhk54RUJtn1kwqU4LTNP-Q" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+            </div>
+        </div>          
+    </div>
+    
+    
+<script language="JavaScript">
+if(typeof disableNavigationKeys == 'function') {
+ disableNavigationKeys(3);
+}
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+
+
+</body>

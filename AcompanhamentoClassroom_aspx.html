@@ -1,0 +1,337 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="download_date" content="2026-09-30T17:25:11.451Z"/><link rel="icon" href="https://alunoonline.educacao.rj.gov.br/AlunoOnline/Images/favicon.ico" type="image/x-icon"><link rel="shortcut icon" href="../Images/favicon.ico" type="image/x-icon"><title>
+	SEEDUC - Governo do Rio de Janeiro
+</title>
+
+<style type="text/css">
+    
+    td{font-family:Tahoma, Geneva, sans-serif;font-size:11px;color:black;}
+    h2{margin:3px 0px 0px 0px;font-family:Verdana, Geneva, sans-serif;font-size:11px;font-weight:bold;color:white;}
+    .tabela-padrao table{border-collapse:collapse;}
+    .tabela-padrao table td{border-collapse:collapse;border:1px solid #C0C0C0;padding:4px;}
+    .tabela-padrao table thead tr{background-color:#BFD7F3;font-weight:bold; text-align:center;}
+    .tabela-padrao table{width:100%;}
+    .tabela-padrao thead td{border-color:#BFD7F3;}
+    .Desbloqueado{display:none;background-image:url(http://localhost:52447/Imagens/loader.gif);}
+    .cabecalho{position:fixed;top:0px;left:0px;width:100%;height:90px;background:white url('http://localhost:52447/Imagens/bk_top-inf.gif') repeat-x;z-index:10000;}
+    .cabecalho .top{position:relative;height:90px;min-width:780px;background:url('http://localhost:52447/Imagens/bk_top.gif') no-repeat;}
+    .cabecalho .ico_sair{border-style:none;border-color:inherit;border-width:0px;float:right;margin:1px 5px 1px 5px;background-image:url('http://localhost:52447/Imagens/bt_sair.png');background-repeat:no-repeat;width:60px;height:18px;}
+    .cabecalho .ico_sair:hover{background-position:-60px;cursor:pointer;}
+    .cabecalho .ico_inicio{border-style:none;border-color:inherit;border-width:0px;float:right;margin:1px 5px 1px 5px;background-image:url('http://localhost:52447/Imagens/ico_inicio.png');background-repeat:no-repeat;width:25px;height:18px;cursor:pointer;}
+    .cabecalho .ico_inicio:hover{background-position:-25px;}
+    .cabecalho .ico_info{border-style:none;border-color:inherit;border-width:0px;float:right;margin:1px 5px 1px 5px;background-repeat:no-repeat;width:25px;height:18px;cursor:pointer;background-image:url('http://localhost:52447/Imagens/ico_info.png');}
+    .cabecalho .ico_info:hover{background-position:-25px;}
+    .cabecalho .top_logo{position:absolute;left:11px;top:1px;width:175px;height:50px;}
+    .cabecalho .tit_sist{position:absolute;top:5px;left:295px;height:20px;width:530px;}
+    .cabecalho .botoes-menu-superior{position:absolute;top:35px;right:10px;height:20px;width:300px;}
+    .cabecalho .tit_pag{position:absolute;left:230px;width:500px;top:35px;height:20px;}
+    .cabecalho .saudacao{position:absolute;right:10px;top:6px;width:460px;height:15px;color:white;font-size:10px;font-weight:bold;}
+    .cabecalho .menu-topo{position:absolute;top:60px;width:1150px;height:20px;display:inline;white-space:nowrap;margin:0px;left:70px;padding:0px;}
+    .cabecalho .menu-topo li a{float:left;line-height:18px;height:20px;padding:0px 1px;background-image:url(http://localhost:52447/Imagens/menu_topo_els.gif);color:#FFF;text-decoration:none;}
+    .cabecalho .menu-topo li a:hover{text-decoration:underline;}
+    .cabecalho .menu-topo li .menu-aba-esquerda{width:10px;height:20px;display:inline-block;background-image:url(http://localhost:52447/Imagens/menu_topo_esqdir.png);background-repeat:no-repeat;background-position:left;float:left;}
+    .cabecalho .menu-topo li .menu-aba-direita{width:10px;height:20px;display:inline-block;background-image:url(http://localhost:52447/Imagens/menu_topo_esqdir.png);background-repeat:no-repeat;background-position:right;float:left;}
+    .cabecalho .menu-topo li{list-style:none;float:left;margin-right:2px;}
+    .rodape{position:fixed;bottom:0px;left:0px;width:100%;height:45px;background:url('http://localhost:52447/Imagens/bk_bas-inf.gif') repeat-x;z-index:10000;}
+    .rodape .bas{position:relative;min-width:640px;height:20px;background:url('http://localhost:52447/Imagens/bk_bas.gif') right no-repeat;padding:20px 140px 5px 20px;font-size:10px;color:white;text-transform:uppercase;}
+    .logo-impressao{border-width:0px;}
+    .topo-padrao{padding-top:15px;}
+    .tabela-padrao{width:auto;margin:auto;margin-top:5em;}
+    .tabela-padrao table{background: #ffffff;width:200px;border-radius: 5%;box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 3%), 0 6.7px 5.3px rgb(0 0 0 / 5%), 0 12.5px 10px rgb(0 0 0 / 6%), 0 22.3px 17.9px rgb(0 0 0 / 7%), 0 41.8px 33.4px rgb(0 0 0 / 9%), 0 100px 80px rgb(0 0 0 / 12%);}  
+    .tabela-padrao table thead tr:first-child{font-weight:bold;font-family:Calibri;font-size:12pt;background-color:#6495ed;text-align:center;}
+    .tabela-padrao table thead tr:first-child td{color:White;}
+    .tabela-padrao table tbody td:first-child{font-weight:bold;width:250px;}
+    @media screen{
+    .cabecalho-impressao{display:none;}
+    }
+    @media print{
+    .top_inf{display:none;}
+    .cabecalho{display:none;}
+    .top{display:none;}
+    .rodape{display:none;}
+    .cabecalho-impressao{display:block;}
+    .topo-padrao{page-break-inside:avoid;-webkit-region-break-inside:avoid;}
+    }
+    .titulo-tabela{font-weight:bold;font-size:14px;color:#2b6ab3;background: #ffffff;text-align: center;font-size:22px;padding: 6px;border-radius: 20px;box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 3%), 0 6.7px 5.3px rgb(0 0 0 / 5%), 0 12.5px 10px rgb(0 0 0 / 6%), 0 22.3px 17.9px rgb(0 0 0 / 7%), 0 41.8px 33.4px rgb(0 0 0 / 9%), 0 100px 80px rgb(0 0 0 / 12%);}
+    .tabela-dados-docente{width:600px!important;}
+    .campo-email-titulo{width:50px!important;}
+    .campo-email-valor{width:550px!important;}
+    .tabela-turmas{width:300px!important;}
+    .campo-unidadeescolar-titulo{width:150px!important;}
+    .campo-turma-titulo{width:150px!important;}
+    .campo-unidadeescolar-valor{width:150px!important;font-weight:normal!important;}
+    .campo-turma-valor{width:150px!important;}
+    .tabela-ultimosacessos{width:200px!important;}
+    .campo-datalogin-titulo{width:150px!important;font-size:18px!important;}
+    .campo-datalogin-valor{width:150px!important;font-weight:normal!important;font-size: 16px!important;}
+    
+</style>
+
+<link href="../Scripts/themes/basic/grid.css" rel="stylesheet" type="text/css"><link href="../Scripts/themes/jqModal.css" rel="stylesheet" type="text/css"><link href="../LyceumNet.data_10062015.css" type="text/css" rel="stylesheet">
+    <!--2021-->
+     <link rel="preconnect" href="https://fonts.gstatic.com/"><link href="../../../_external/fonts.googleapis.com/css2.family_Open_Sans_ital_wght_0_300_0_400_0_600_0_700_0_800_1_300_1_400_1_600_1_700_1_800_display_swap.css" rel="stylesheet"><link rel="stylesheet" href="../../../_external/cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css"><link rel="stylesheet" href="../../../_external/cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    
+    <style>
+    .top_inf{position:fixed;width:100%;background:#1E6496;color:#ffffff;box-shadow:0 0.5rem 1rem rgb(0 0 0 / 5%), inset 0 -1px 0 rgb(0 0 0 / 15%);height:65px;font-size:small;font-family:verdana, arial, helvetica;z-index:9999;}
+    .top_outros{position:relative;height:65px;}
+    .top_logo_governo{background-image:url("../images/logo-educacao-branca.png");background-size:cover;width:164px;height:50px;margin:7px auto;position:absolute;left:20px;}
+    .top_logo_gestao{background-image:url("../images/logo-aluno.png");background-size:cover;width:110px;height:30px;margin-top:10px;position:absolute;left:210px;}
+   .tit_pag{position:absolute;top:20px;left:210px;height:20px;width:775px;}
+    .tit_pag > h5{width:260px;}
+    .top_usuario_logado{height:50px;margin:15px auto;position:absolute;left:480px;right:178px;color:white;white-space:nowrap;overflow:hidden;}
+    .top_usuario_logado > span{display:block;}
+    .top_botoes{width:170px;height:50px;margin:7px auto;position:absolute;right:10px;}
+    .buttom-top{text-align:center;width:70px;padding:0px 8px;border:2px solid #1E6496;border-radius:5px;margin:8px 5px 0 5px;color:#1E6496;Background:white;font-size:1em;font-weight:600;font-family:'Verdana', Geneva, sans-serif!important;display:inline-flex;justify-content:space-evenly;align-items:center;}
+    .buttom-top:hover{padding:0px 8px;border:2px solid #ffffff;color:white;Background:#1E6496;font-size:1em;text-decoration:none;}
+    a:link{text-decoration:none;color:#0353ab;}
+    a:visited{text-decoration:none;color:#0353ab;}
+    a:hover{text-decoration:underline;color:#666;}
+    a:active{text-decoration:none;color:#0353ab;}
+    
+    @media (max-width: 1066px) {
+        .tit_pag {
+            margin: unset;
+            display: unset;
+            min-width: unset;
+            max-width: unset;
+            width: unset;
+            height: unset;
+            flex-direction: unset;
+            align-items: unset;
+            text-align: unset;
+            background: unset;
+            padding-top: unset;
+            border-radius: unset;
+        }
+        
+        .conteudo {
+            padding-top: 80px;
+        }
+    }
+    
+    .menu-topo{width:2000px;margin:0px;padding:0px;margin-left:3px;padding-top:1px;border-top:2px solid #dfe6ed;}
+    .menu-topo li a{display:block;height:20px;padding:0px 1px;background:#1E6496;color:#FFF;text-decoration:none;font-size:11px;padding:3px 5px;border-radius:5px;font-family:'Open Sans',Tahoma, Geneva, sans-serif;}
+    .menu-topo li a:hover{text-decoration:underline;}
+    .menu-topo li{list-style:none;float:left;margin-right:2px;}
+    #top_menu{width:2000px;margin:3px 3px;}
+    
+    
+    
+    /*! CSS Used from: https://desenvolvimento.educacao.rj.gov.br/NovoFrontEndConexao2/site.css */
+.top_botoes{width:170px;height:50px;margin:7px auto;position:absolute;right:10px;}
+.imagem-menu{display:inline-block;height:50px;width:50px;background-repeat:no-repeat;background-position:center;background-size:35px;border:1px solid transparent;}
+.imagem-home{background-image:url('../Images/icone-site-04.png');}
+.imagem-ajuda{background-image:url('../Images/icone-site-05.png');}
+.imagem-sair{background-image:url('../Images/icone-site-06.png');}
+a:link{text-decoration:none;color:#0353ab;}
+a:visited{text-decoration:none;color:#0353ab;}
+a:hover{text-decoration:underline;color:#666;}
+a:active{text-decoration:none;color:#0353ab;}
+
+
+    </style>
+        <!-- RybenÃ¡-->
+        <script type="text/javascript" src="../../../_external/cdn.rybena.com.br/dom/master/latest/rybena.positionPlayer_left_positionBar_right.js"></script>
+<link href="../App_Themes/Blue/Editors/styles.css" type="text/css" rel="stylesheet"><link href="../App_Themes/Blue/Web/styles.css" type="text/css" rel="stylesheet"></head>
+<body onload="moveRelogio();" approot="../">
+
+    <script type="text/javascript" src="../Scripts/jquery-1.7.1.min.js"></script>
+
+    <script type="text/javascript" src="../Scripts/jquery.jqGrid.js"></script>
+
+    <script type="text/javascript" src="../Scripts/js/jqModal.js"></script>
+
+    <script type="text/javascript" src="../Scripts/MaskTypes.js"></script>
+
+    <form name="aspnetForm" method="post" action="." id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="O6b5xyrrtpZIqB+9f4LipSXcJjZS7FQ7Y1+DRlh39cXpdjHvrXpNddIo57OkKHlMN1NobNks+4ReUI4uqVvSs2OMBPPcec2fGfiqcMr4qIW9a7oiEMKSZZkXxmtP3XmZfazbjXuv/KOr9mq5uZIhCWxu0SFT9mmcSJbYTbVx943P4RasiXXax1O096XXzGA25TAsn39dj70BL+x8nNY0uWXEmrEJoahfgc0BWBsuwiCBNoGCDComjjg5V7TBV0bMhFCChuqjjKsChymhMtcZMV5rqMp/ohxOqdhOHxDHCdWFVs2h0xLZsPv3aKtIUdcVLUrH/9I/PvZVWqQrU9rrD00c2og7PxEc7crLk9ZKSaIMOi7PXC4jsmJspnzVkftphSVCweQ7E+2kNpSEiEuoWGSOPJ1JEnCejbqHuI6gdYcHWZ4E">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="../WebResource.axd.d_ve0ho7hyr6l2X5Mh-yYBMHYqRsuhqevfuEtrxThujkUI_-l0qPXwEqySfLPgJHya_zAMj4iCRidNUR3SI-E1ErTQQgw1_t_639191407580000000.js" type="text/javascript"></script>
+
+
+<script src="../WebResource.axd.d_fPCAzRdpY_7YDAGhhSrrTT3mYANBXuZmwrW7tCMbTAX7hgc4WQBfxnPmr05asZauW-XMWotvoFh9NDA1MPVsq76v1atAQiJ2fJJa_VZ2DkMkV4Z9oWBt1RXKYA5FuSw6txGc5y-fGRwMeETeB5ghefz2OrE1_t_635719612030191336.js" type="text/javascript"></script>
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="E7BF5F44">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="tBdQRTRs2OdVvi3cmPkmjtuJIKNJFCUmAtybuej4kLawluQuDvv6ECqJextgufcZ+F/93RBebauXPjimLp75zNJN+ZTkhAB5XSrjFmvfpjc3Afjq">
+</div>
+    
+    <!-- Aqui Ã© a Header "top_inf"-->
+    <div class="top_inf">
+        
+        <div class="top_outros">
+                
+            <!-- LOGO -->
+            <div class="top_logo_governo"></div>
+            
+            <div class="top_logo_gestao"></div>
+			
+			<div class="tit_pag">
+			    <h5 align="left">
+				    
+				</h5>
+   			</div>
+   			
+   			<!-- Dados do usuÃ¡rio logado -->  
+            <div class="top_usuario_logado">
+                <span><b>MatrÃ­cula:</b> 202617660715733 (IP: 45.161.5.132)</span>
+                <span><div id="divHoraData"></div></span>
+            </div>
+            
+            <div class="top_botoes">
+                <!-- BotÃµes - Home -->   
+                <a id="ctl00_hlInicio" title="InÃ­cio" class="imagem-menu imagem-home" href="../Default_aspx.html"><span class="imagem-home"></span></a>
+                
+                <!-- BotÃµes - Ajuda -->    
+                <a id="ctl00_hlHelp" title="Ajuda" class="imagem-menu imagem-ajuda" onclick="__Help(); return(false);" style="cursor:pointer;"><span class="imagem-ajuda"></span></a>
+                
+                <!-- BotÃµes - Sair -->
+                <a id="ctl00_lbSair" title="Logoff" class="imagem-menu imagem-sair" href="javascript:__doPostBack('ctl00$lbSair','')"><span class="imagem-sair"></span></a>
+            </div>
+        </div>
+        
+        <!-- NAVBAR - MENU INTERNO -->
+        <div class="top_menu">
+	        <ul class="menu-topo">
+		        <li>
+			        <a id="ctl00_lnk1" href="javascript:__doPostBack('ctl00$lnk1','')">Boletim</a>
+		        </li>
+
+		        <li>
+			        <a id="ctl00_lnk10" href="javascript:__doPostBack('ctl00$lnk10','')">Conta para acessar Classroom</a> 
+		        </li>
+
+                <li>
+			        <a id="ctl00_lnk3" href="javascript:__doPostBack('ctl00$lnk3','')">Acompanhamento Classroom</a>
+		        </li>
+	        </ul>
+        </div>
+    </div>
+    
+    
+    <!-- CONTEUDO DO SITE -->
+    <div id="conteudo" class="conteudo" style="">
+            
+    <br>
+    <span id="ctl00_cphFormulario_lblMensagem" style="color:Red;font-weight:bold;"></span>
+    <br>
+    
+    <div class="tabela-padrao">
+        <div class="topo-padrao">
+
+            <p class="titulo-tabela">Ãšltimos Acessos</p>
+
+            <table class="tabela-ultimosacessos">
+                <thead>
+                    <tr>
+                        <td class="campo-datalogin-titulo">Data Login</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr><td>Sem acessos registrados</td></tr>
+                    
+                </tbody>      
+            </table>
+        </div>
+    </div>
+
+    </div>
+    <br>
+    
+    <!-- Redes Sociais 
+    <div>
+        <table width="30%" align="center">
+            <tr>
+                <td colspan="3" align="center">
+                    <h3>
+                        Curta as redes sociais da Seeduc e acompanhe todas as novidades
+                    </h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://facebook.com/seeducrj" target="_blank">
+                        <img src="../Images/facebook_ce_pe.png" alt="Facebook" title="Facebook" /></a>
+                </td>               
+                <td>
+                    <a href="https://www.youtube.com/user/seeducrio" target="_blank">
+                        <img src="../Images/youtube_ce_pe.png" alt="Youtube" title="Youtube" /></a>
+                </td>
+                <td>
+                    <a href="https://www.instagram.com/seeducrj/" target="_blank">
+                        <img src="../Images/instagram_ce_pe.png" alt="Instagram" title="Instagram" /></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+                -->
+    
+    
+    <!-- FOOTER 
+    <div class="bas-inf">
+        <div class="bas">
+            &copy; Todos os direitos reservados -
+            2026
+            | versÃ£o
+            2.0.0.46728P</div>
+    </div>-->
+    
+    <div class="footer">
+        <div class="copyright">
+            © Todos os direitos reservados SEEDUC - RJ -
+            2026
+            | versÃ£o
+            
+        </div>
+        
+        
+        <!-- A Direita - Redes sociais -->
+        <div class="midias-sociais">
+            <div class="icons-midias">
+                <a href="https://www.facebook.com/seeducRJ" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+                <a href="https://www.instagram.com/seeducrj/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://www.youtube.com/channel/UCzhk54RUJtn1kwqU4LTNP-Q" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+            </div>
+        </div>          
+    </div>
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+
+
+</body>

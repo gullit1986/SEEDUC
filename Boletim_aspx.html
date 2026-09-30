@@ -1,0 +1,581 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="download_date" content="2026-09-30T17:25:11.451Z"/><link rel="icon" href="https://alunoonline.educacao.rj.gov.br/AlunoOnline/Images/favicon.ico" type="image/x-icon"><link rel="shortcut icon" href="../Images/favicon.ico" type="image/x-icon"><title>
+	SEEDUC - Governo do Rio de Janeiro
+</title>
+    <link href="../Scripts/themes/basic/grid.css" rel="stylesheet" type="text/css"><link href="../Scripts/themes/jqModal.css" rel="stylesheet" type="text/css"><link href="../LyceumNet.data_10062015.css" type="text/css" rel="stylesheet">
+    <!--2021-->
+     <link rel="preconnect" href="https://fonts.gstatic.com/"><link href="../../../_external/fonts.googleapis.com/css2.family_Open_Sans_ital_wght_0_300_0_400_0_600_0_700_0_800_1_300_1_400_1_600_1_700_1_800_display_swap.css" rel="stylesheet"><link rel="stylesheet" href="../../../_external/cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css"><link rel="stylesheet" href="../../../_external/cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    
+    <style>
+    .top_inf{position:fixed;width:100%;background:#1E6496;color:#ffffff;box-shadow:0 0.5rem 1rem rgb(0 0 0 / 5%), inset 0 -1px 0 rgb(0 0 0 / 15%);height:65px;font-size:small;font-family:verdana, arial, helvetica;z-index:9999;}
+    .top_outros{position:relative;height:65px;}
+    .top_logo_governo{background-image:url("../images/logo-educacao-branca.png");background-size:cover;width:164px;height:50px;margin:7px auto;position:absolute;left:20px;}
+    .top_logo_gestao{background-image:url("../images/logo-aluno.png");background-size:cover;width:110px;height:30px;margin-top:10px;position:absolute;left:210px;}
+   .tit_pag{position:absolute;top:20px;left:210px;height:20px;width:775px;}
+    .tit_pag > h5{width:260px;}
+    .top_usuario_logado{height:50px;margin:15px auto;position:absolute;left:480px;right:178px;color:white;white-space:nowrap;overflow:hidden;}
+    .top_usuario_logado > span{display:block;}
+    .top_botoes{width:170px;height:50px;margin:7px auto;position:absolute;right:10px;}
+    .buttom-top{text-align:center;width:70px;padding:0px 8px;border:2px solid #1E6496;border-radius:5px;margin:8px 5px 0 5px;color:#1E6496;Background:white;font-size:1em;font-weight:600;font-family:'Verdana', Geneva, sans-serif!important;display:inline-flex;justify-content:space-evenly;align-items:center;}
+    .buttom-top:hover{padding:0px 8px;border:2px solid #ffffff;color:white;Background:#1E6496;font-size:1em;text-decoration:none;}
+    a:link{text-decoration:none;color:#0353ab;}
+    a:visited{text-decoration:none;color:#0353ab;}
+    a:hover{text-decoration:underline;color:#666;}
+    a:active{text-decoration:none;color:#0353ab;}
+    
+    @media (max-width: 1066px) {
+        .tit_pag {
+            margin: unset;
+            display: unset;
+            min-width: unset;
+            max-width: unset;
+            width: unset;
+            height: unset;
+            flex-direction: unset;
+            align-items: unset;
+            text-align: unset;
+            background: unset;
+            padding-top: unset;
+            border-radius: unset;
+        }
+        
+        .conteudo {
+            padding-top: 80px;
+        }
+    }
+    
+    .menu-topo{width:2000px;margin:0px;padding:0px;margin-left:3px;padding-top:1px;border-top:2px solid #dfe6ed;}
+    .menu-topo li a{display:block;height:20px;padding:0px 1px;background:#1E6496;color:#FFF;text-decoration:none;font-size:11px;padding:3px 5px;border-radius:5px;font-family:'Open Sans',Tahoma, Geneva, sans-serif;}
+    .menu-topo li a:hover{text-decoration:underline;}
+    .menu-topo li{list-style:none;float:left;margin-right:2px;}
+    #top_menu{width:2000px;margin:3px 3px;}
+    
+    
+    
+    /*! CSS Used from: https://desenvolvimento.educacao.rj.gov.br/NovoFrontEndConexao2/site.css */
+.top_botoes{width:170px;height:50px;margin:7px auto;position:absolute;right:10px;}
+.imagem-menu{display:inline-block;height:50px;width:50px;background-repeat:no-repeat;background-position:center;background-size:35px;border:1px solid transparent;}
+.imagem-home{background-image:url('../Images/icone-site-04.png');}
+.imagem-ajuda{background-image:url('../Images/icone-site-05.png');}
+.imagem-sair{background-image:url('../Images/icone-site-06.png');}
+a:link{text-decoration:none;color:#0353ab;}
+a:visited{text-decoration:none;color:#0353ab;}
+a:hover{text-decoration:underline;color:#666;}
+a:active{text-decoration:none;color:#0353ab;}
+
+
+    </style>
+        <!-- RybenÃ¡-->
+        <script type="text/javascript" src="../../../_external/cdn.rybena.com.br/dom/master/latest/rybena.positionPlayer_left_positionBar_right.js"></script>
+<link href="../App_Themes/Blue/Editors/styles.css" type="text/css" rel="stylesheet"><link href="../App_Themes/Blue/Web/styles.css" type="text/css" rel="stylesheet"></head>
+<body onload="moveRelogio();" approot="../">
+
+    <script type="text/javascript" src="../Scripts/jquery-1.7.1.min.js"></script>
+
+    <script type="text/javascript" src="../Scripts/jquery.jqGrid.js"></script>
+
+    <script type="text/javascript" src="../Scripts/js/jqModal.js"></script>
+
+    <script type="text/javascript" src="../Scripts/MaskTypes.js"></script>
+
+    <form name="aspnetForm" method="post" action="." onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="../WebResource.axd.d_ve0ho7hyr6l2X5Mh-yYBMHYqRsuhqevfuEtrxThujkUI_-l0qPXwEqySfLPgJHya_zAMj4iCRidNUR3SI-E1ErTQQgw1_t_639191407580000000.js" type="text/javascript"></script>
+
+<script language="javascript" src="../scripts/Help.js"></script>
+<script src="../WebResource.axd.d_fPCAzRdpY_7YDAGhhSrrTT3mYANBXuZmwrW7tCMbTAX7hgc4WQBfxnPmr05asZauW-XMWotvoFh9NDA1MPVsq76v1atAQiJ2fJJa_VZ2DkMkV4Z9oWBt1RXKYA5FuSw6txGc5y-fGRwMeETeB5ghefz2OrE1_t_635719612030191336.js" type="text/javascript"></script><script language="JavaScript" src="../Scripts/TPageLyceum.js"></script>
+
+<script src="../ScriptResource.axd.d_lz9REGRaSgh51Hl4b0tlQME1pkMRI5HRcCBzaNI77s1AsQnXnM-xmpCkvkm1vxmU1Fr14bekBgnOx-_LjSq1YKkOPMiU49TP7V8qHPSd3SF9v3-wZxvuE5q6z6ytFrjRoKiT-36yBi0x1mgzevi_lq6dOyeiCXqeLOliC3yQ6FJmPaqn0_t_ffffffff9bc22534.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="../ScriptResource.axd.d_rkjykZ0WW2o3LV6SIVEdMZvkDD6jvXXM5D3lQHWCawgIbytnevu6urUvMBncrti-G7cPkFcQiHrxJhXeUJwTm84uDrIboAOTUj_Lh-3CauIzIdcUQNZQd6LT7RVLTzbdZ6vhrsgCiSt7yC4MCT4tHPKIYwu98QVAa9Rkrh_fisvBUz0Q0_t_ffffffff9bc22534.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+WebForm_ReEnableControls();
+return true;
+}
+//]]>
+</script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="6D68D521">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="JblpD/Zlvu8AFZDK9ywGEIfOJ62nZtEpsKtYTRppnk84Q6yUoYnvU+sIplferDFFETuQ0GqC15b95zy2UT1SJ9uA9TtW9lXXccc6bba5AhSF9N93+Y6GQqBfHvvulB5ht6zJ7hePm6sPhQBDYFncYK6vZZGySVO/juRZ9IJGKMuIlUks">
+</div>
+    
+    <!-- Aqui Ã© a Header "top_inf"-->
+    <div class="top_inf">
+        
+        <div class="top_outros">
+                
+            <!-- LOGO -->
+            <div class="top_logo_governo"></div>
+            
+            <div class="top_logo_gestao"></div>
+			
+			<div class="tit_pag">
+			    <h5 align="left">
+				    Boletim
+				</h5>
+   			</div>
+   			
+   			<!-- Dados do usuÃ¡rio logado -->  
+            <div class="top_usuario_logado">
+                <span><b>MatrÃ­cula:</b> 202617660715733 (IP: 45.161.5.132)</span>
+                <span><div id="divHoraData"></div></span>
+            </div>
+            
+            <div class="top_botoes">
+                <!-- BotÃµes - Home -->   
+                <a id="ctl00_hlInicio" title="InÃ­cio" class="imagem-menu imagem-home" href="../Default_aspx.html"><span class="imagem-home"></span></a>
+                
+                <!-- BotÃµes - Ajuda -->    
+                <a id="ctl00_hlHelp" title="Ajuda" class="imagem-menu imagem-ajuda" onclick="__Help(); return(false);" style="cursor:pointer;"><span class="imagem-ajuda"></span></a>
+                
+                <!-- BotÃµes - Sair -->
+                <a id="ctl00_lbSair" title="Logoff" class="imagem-menu imagem-sair" href="javascript:__doPostBack('ctl00$lbSair','')"><span class="imagem-sair"></span></a>
+            </div>
+        </div>
+        
+        <!-- NAVBAR - MENU INTERNO -->
+        <div class="top_menu">
+	        <ul class="menu-topo">
+		        <li>
+			        <a id="ctl00_lnk1" href="javascript:__doPostBack('ctl00$lnk1','')">Boletim</a>
+		        </li>
+
+		        <li>
+			        <a id="ctl00_lnk10" href="javascript:__doPostBack('ctl00$lnk10','')">Conta para acessar Classroom</a> 
+		        </li>
+
+                <li>
+			        <a id="ctl00_lnk3" href="javascript:__doPostBack('ctl00$lnk3','')">Acompanhamento Classroom</a>
+		        </li>
+	        </ul>
+        </div>
+    </div>
+    
+    
+    <!-- CONTEUDO DO SITE -->
+    <div id="conteudo" class="conteudo" style="">
+        
+    <link rel="stylesheet" href="../Styles/Boletim.css" type="text/css">
+
+    <script type="text/javascript">
+
+        $(function() {
+            $("#btnPrint").click(function() {
+                var contents = $("#ctl00_cphFormulario_divGrdBoletim").html();
+                var contentsPrincipal = $("#ctl00_cphFormulario_divPrincipal").html();
+                var contentsAssinatura = $("#ctl00_cphFormulario_divAssinatura").html();
+                var contentsMSG = $("#ctl00_cphFormulario_divmsg").html();
+                var contentsInformativo = $("#ctl00_cphFormulario_divInformativo").html();
+                var contentsPortaria = $("#ctl00_cphFormulario_divPortaria").html();
+                var frame1 = $('<iframe />');
+                frame1[0].name = "frame1";
+                frame1.css({ "position": "absolute", "top": "-1000000px" });
+                $("body").append(frame1);
+                var frameDoc = frame1[0].contentWindow ? frame1[0].contentWindow : frame1[0].contentDocument.document ? frame1[0].contentDocument.document : frame1[0].contentDocument;
+                frameDoc.document.open();
+                //Create a new HTML document.
+                frameDoc.document.write('<html><head><title>Boletim do Aluno</title>');
+                frameDoc.document.write('</head><body>');
+                //Append the external CSS file.
+                frameDoc.document.write('<link href="../Styles/BoletimImpressao.css" rel="stylesheet" type="text/css" />');
+                //Append the DIV contents.
+                frameDoc.document.write(contentsPrincipal);
+                frameDoc.document.write(' <br /> <br /> <br />');
+                frameDoc.document.write(contentsMSG);
+                frameDoc.document.write(' <br /> <br /> <br />');
+                frameDoc.document.write(contents);
+                frameDoc.document.write(' <br /> <br /> <br />');
+                frameDoc.document.write(contentsAssinatura);
+                frameDoc.document.write(' <br /> <br /> <br />');
+                frameDoc.document.write(contentsPortaria);
+                frameDoc.document.write(' <br /> <br /> <br />');
+                frameDoc.document.write(contentsInformativo);
+                frameDoc.document.write('</body></html>');
+                frameDoc.document.close();
+                setTimeout(function() {
+                    window.frames["frame1"].focus();
+                    window.frames["frame1"].print();
+                    frame1.remove();
+                }, 500);
+            });
+        });
+
+        function formataFixoCelularDDD(b, a) {
+            vr = b.value = filtraNumeros(filtraCampo(b));
+            tam = vr.length;
+            if (tam < 10)
+                return;
+
+            if (tam == 11) {
+                formataCelularDDD(b, a);
+            }
+            if (tam == 10) {
+                formataTelefoneDDD(b, a);
+
+            }
+        }
+
+        function formataCelularDDD(b, a) {
+
+            a = getEvent(a);
+            var c = getKeyCode(a);
+            if (!teclaValida(c)) {
+                return
+            }
+            vr = b.value = filtraNumeros(filtraCampo(b));
+            if (vr.length > 11) {
+                vr = vr.substr(0, 11)
+            }
+            tam = vr.length;
+
+            if (tam <= 2) {
+                b.value = "(" + vr + ")"
+
+            }
+            if (tam <= 6) {
+                b.value = "(" + vr.substr(0, 2) + ")" + vr.substr(2, 5)
+
+            }
+            if (tam > 6) {
+                b.value = "(" + vr.substr(0, 2) + ")" + vr.substr(2, 5) + "-" + vr.substr(7, 4)
+
+            }
+        }
+
+        function formataTelefoneDDD(b, a) {
+            a = getEvent(a);
+            var c = getKeyCode(a);
+            if (!teclaValida(c)) {
+                return
+            }
+            vr = b.value = filtraNumeros(filtraCampo(b));
+            if (vr.length > 10) {
+                vr = vr.substr(0, 10)
+            }
+            tam = vr.length;
+            if (tam <= 2) {
+                b.value = "(" + vr + ")"
+            }
+            if (tam <= 6) {
+                b.value = "(" + vr.substr(0, 2) + ")" + vr.substr(2, 4)
+            }
+            if (tam > 6) {
+                b.value = "(" + vr.substr(0, 2) + ")" + vr.substr(2, 4) + "-" + vr.substr(6, 4)
+            }
+        }
+    </script>
+
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$cphFormulario$manager', document.getElementById('aspnetForm'));
+Sys.WebForms.PageRequestManager.getInstance()._updateControls(['tctl00$cphFormulario$updatePanel1','tctl00$cphFormulario$updatePanel3','tctl00$cphFormulario$updatePanel2'], ['ctl00$cphFormulario$btnAtualizar'], [], 90);
+//]]>
+</script>
+
+    <div id="ctl00_cphFormulario_updatePanel1">
+	
+            <input type="hidden" name="ctl00$cphFormulario$hdnAno" id="ctl00_cphFormulario_hdnAno" value="2026">
+            <input type="hidden" name="ctl00$cphFormulario$hdnSemestre" id="ctl00_cphFormulario_hdnSemestre" value="0">
+            <input type="hidden" name="ctl00$cphFormulario$hdnMatriculaAtiva" id="ctl00_cphFormulario_hdnMatriculaAtiva" value="True">
+            <input type="hidden" name="ctl00$cphFormulario$hdnMatriculaHistorico" id="ctl00_cphFormulario_hdnMatriculaHistorico" value="False">
+            <input type="hidden" name="ctl00$cphFormulario$hdnQuantidadeBimestres" id="ctl00_cphFormulario_hdnQuantidadeBimestres" value="3">
+            <div id="ctl00_cphFormulario_divPrincipal">
+                <table width="820px">
+                    <tbody><tr>
+                        <td style="width: 10px">
+                            <img id="ctl00_cphFormulario_Image1" src="../Images/logo-educacao.png" alt="Governo do Rio de Janeiro - Sec de Estado de EducaÃ§Ã£o" style="border-width:0px;text-align: right">
+                        </td>
+                        <td class="titulo">
+                            BOLETIM DO ALUNO
+                        </td>
+                    </tr>
+                </tbody></table>
+                <br>
+                <br>
+                <br>
+                <table class="tablePrincipal">
+                    <tbody><tr>
+                        <td class="tdTituloPrincipal">
+                            Aluno(a):
+                        </td>
+                        <td colspan="3" class="tdPrincipal">
+                            <span id="ctl00_cphFormulario_lblNome">202617660715733 - PEDRO RAFAEL LIMA LUNA</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdTituloPrincipal">
+                            Unidade de Ensino:
+                        </td>
+                        <td colspan="3" class="tdPrincipal">
+                            <span id="ctl00_cphFormulario_lblUnidade">33053340 - CIEP 441 MANÃ‰ GARRINCHA</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdTituloPrincipal">
+                            Ano:
+                        </td>
+                        <td class="tdPrincipal">
+                            <span id="ctl00_cphFormulario_lblAno">2026</span>
+                        </td>
+                        <td class="tdTituloPrincipal">
+                            Periodo:
+                        </td>
+                        <td class="tdPrincipal">
+                            <span id="ctl00_cphFormulario_lblPeriodo">Anual</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdTituloPrincipal">
+                            Escolaridade:
+                        </td>
+                        <td colspan="3" class="tdPrincipal">
+                            <span id="ctl00_cphFormulario_lblEscolaridade">ENSINO MÃ‰DIO ITINERÃRIO FORMATIVO TECNOLOGIA SUSTENTABILIDADE ARTE E ESPORTE</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdTituloPrincipal">
+                            Ano de Escolaridade:
+                        </td>
+                        <td class="tdPrincipal">
+                            <span id="ctl00_cphFormulario_lblAnoEscolaridade">1</span>
+                        </td>
+                        <td class="tdTituloPrincipal">
+                            Turno:
+                        </td>
+                        <td class="tdPrincipal">
+                            <span id="ctl00_cphFormulario_lblTurno">INTEGRAL</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdTituloPrincipal">
+                            Turma Principal:
+                        </td>
+                        <td colspan="3" class="tdPrincipal">
+                            <span id="ctl00_cphFormulario_lblTurmaPrincipal">IF TSEA-1005-181766</span>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <br>
+            
+            <br>
+            
+            <br>
+            <div id="ctl00_cphFormulario_divTelefone">
+                <table>
+                    <tbody><tr>
+                        <td style="text-align: right">
+                            <span id="ctl00_cphFormulario_lblFone">Telefone do ResponsÃ¡vel:</span>
+                        </td>
+                        <td>
+                            <input name="ctl00$cphFormulario$txtFone" type="text" maxlength="14" id="ctl00_cphFormulario_txtFone" onkeyup="formataFixoCelularDDD(this,event)" placeholder="(99)99999-9999" style="width:100px;">
+                        </td>
+                        <td>
+                            <input type="submit" name="ctl00$cphFormulario$btnAtualizar" value="Atualizar" id="ctl00_cphFormulario_btnAtualizar">
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <div id="ctl00_cphFormulario_divmsg">
+            <table>
+                <tbody><tr>
+                    <td colspan="3">
+                        <span id="ctl00_cphFormulario_lblMensagem" style="color:Red;font-weight:bold;"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <span id="ctl00_cphFormulario_lblUltimaAtualizacao" style="color:Red;font-weight:bold;">Ãšltima atualizaÃ§Ã£o da base realizada em: 22/02/2025 - 08:16.</span>
+                    </td>
+                </tr>
+                 <tr>
+                    <td colspan="3">
+                        <span id="ctl00_cphFormulario_lblTipoMaricula" style="color:Red;font-weight:bold;">MatrÃ­cula Ativa Ã&nbsp;s 14:26 do dia 30/09/2026.</span>
+                    </td>
+                </tr>
+            </tbody></table>
+            </div>
+            <br>
+            <br>
+            <div id="ctl00_cphFormulario_divGrdBoletim"><div class="tabela-padrao-principal"><div class="tabela-padrao"><div class="tabela-cabecalho"><img class="aba-direita"><div class="centro"><img src="../Images/tabela_cabecalho_grid.png"></div><div class="aba-esquerda"></div> <span> TURMA : IF TSEA-1005-181766 </span> </div><table> <thead><tr><td class="centralizado-micro-titulo">Disciplina</td><td class="centralizado-micro-titulo">Nota<br>1Âº Tri</td><td class="centralizado-micro-titulo">Faltas<br>1º Tri</td><td class="centralizado-micro-titulo">Frequencia<br>1º Tri(%)</td><td class="centralizado-micro-titulo">Nota<br>2º Tri</td><td class="centralizado-micro-titulo">Faltas<br>2Âº Tri</td><td class="centralizado-micro-titulo">FrequÃªncia<br>2Âº Tri(%)</td><td class="centralizado-micro-titulo">Nota<br>3Âº Tri</td><td class="centralizado-micro-titulo">Faltas<br>3º Tri</td><td class="centralizado-micro-titulo">Frequencia<br>3º Tri(%)</td><td class="centralizado-micro-titulo">Notas<br>Acum.</td><td class="centralizado-micro-titulo">FrequÃªncia<br>Acum.(%)</td></tr></thead><tbody><tr class="classeZebrado"><td class="centralizado-micro-disciplina">BIOLOGIA </td><td class="centralizado-micro">6,30</td><td class="centralizado-micro">4</td><td class="centralizado-micro" style=" border-right: 2px solid Gray; ">83,33</td><td class="centralizado-micro">5,00</td><td class="centralizado-micro">0</td><td class="centralizado-micro" style=" border-right: 2px solid Gray;  ">100,00</td><td class="centralizado-micro"></td><td class="centralizado-micro"></td><td class="centralizado-micro" style=" border-right: 2px solid Gray; "></td><td class="centralizado-micro-totais" style=" color: rgb(0, 0, 0)">16,30</td><td class="centralizado-micro-totais">91,67</td></tr></tbody><tbody><tr class="classeZebrado"><td class="centralizado-micro-disciplina">EDUCAÃ‡ÃƒO AMBIENTAL E SUSTENTABILIDADE </td><td class="centralizado-micro">5,00</td><td class="centralizado-micro">8</td><td class="centralizado-micro" style=" border-right: 2px solid Gray; ">84,62</td><td class="centralizado-micro">6,50</td><td class="centralizado-micro">8</td><td class="centralizado-micro" style=" border-right: 2px solid Gray;  ">84,62</td><td class="centralizado-micro"></td><td class="centralizado-micro"></td><td class="centralizado-micro" style=" border-right: 2px solid Gray; "></td><td class="centralizado-micro-totais" style=" color: rgb(0, 0, 0)">15,50</td><td class="centralizado-micro-totais">84,62</td></tr></tbody><tbody><tr class="classeZebrado"><td class="centralizado-micro-disciplina">EDUCAÃ‡ÃƒO FÃSICA </td><td class="centralizado-micro">8,10</td><td class="centralizado-micro">0</td><td class="centralizado-micro" style=" border-right: 2px solid Gray; ">100,00</td><td class="centralizado-micro">8,00</td><td class="centralizado-micro">0</td><td class="centralizado-micro" style=" border-right: 2px solid Gray;  ">100,00</td><td class="centralizado-micro"></td><td class="centralizado-micro"></td><td class="centralizado-micro" style=" border-right: 2px solid Gray; "></td><td class="centralizado-micro-totais">16,10</td><td class="centralizado-micro-totais">100,00</td></tr></tbody><tbody><tr class="classeZebrado"><td class="centralizado-micro-disciplina">ESTUDOS ORIENTADOS </td><td class="centralizado-micro"></td><td class="centralizado-micro">4</td><td class="centralizado-micro" style=" border-right: 2px solid Gray;  color: rgb(0, 0, 0) ">86,23</td><td class="centralizado-micro"></td><td class="centralizado-micro">0</td><td class="centralizado-micro" style=" border-right: 2px solid Gray;  ">100,00</td><td class="centralizado-micro"></td><td class="centralizado-micro"></td><td class="centralizado-micro" style=" border-right: 2px solid Gray; "></td><td class="centralizado-micro-totais"></td><td class="centralizado-micro-totais">89,74</td></tr></tbody><tbody><tr class="classeZebrado"><td class="centralizado-micro-disciplina">FILOSOFIA </td><td class="centralizado-micro">9,00</td><td class="centralizado-micro">0</td><td class="centralizado-micro" style=" border-right: 2px solid Gray; ">100,00</td><td class="centralizado-micro" style=" color: red">1,50</td><td class="centralizado-micro">4</td><td class="centralizado-micro" style=" border-right: 2px solid Gray;  ">83,33</td><td class="centralizado-micro"></td><td class="centralizado-micro"></td><td class="centralizado-micro" style=" border-right: 2px solid Gray; "></td><td class="centralizado-micro-totais" style=" color: rgb(0, 0, 0)">15,07</td><td class="centralizado-micro-totais">91,67</td></tr></tbody><tbody><tr class="classeZebrado"><td class="centralizado-micro-disciplina">FÃSICA </td><td class="centralizado-micro">5,00</td><td class="centralizado-micro">0</td><td class="centralizado-micro" style=" border-right: 2px solid Gray; ">100,00</td><td class="centralizado-micro">6,00</td><td class="centralizado-micro">0</td><td class="centralizado-micro" style=" border-right: 2px solid Gray;  ">100,00</td><td class="centralizado-micro"></td><td class="centralizado-micro"></td><td class="centralizado-micro" style=" border-right: 2px solid Gray; "></td><td class="centralizado-micro-totais" style=" color: rgb(0, 0, 0)">15,00</td><td class="centralizado-micro-totais">100,00</td></tr></tbody><tbody><tr class="classeZebrado"><td class="centralizado-micro-disciplina">GEOGRAFIA </td><td class="centralizado-micro">9,30</td><td class="centralizado-micro">2</td><td class="centralizado-micro" style=" border-right: 2px solid Gray; ">91,67</td><td class="centralizado-micro">7,00</td><td class="centralizado-micro">2</td><td class="centralizado-micro" style=" border-right: 2px solid Gray;   color: rgb(0, 0, 0) ">80,08</td><td class="centralizado-micro"></td><td class="centralizado-micro"></td><td class="centralizado-micro" style=" border-right: 2px solid Gray; "></td><td class="centralizado-micro-totais">16,30</td><td class="centralizado-micro-totais" style=" color: rgb(0, 0, 0)">84,00</td></tr></tbody><tbody><tr class="classeZebrado"><td class="centralizado-micro-disciplina">HISTORIA </td><td class="centralizado-micro">7,00</td><td class="centralizado-micro">3</td><td class="centralizado-micro" style=" border-right: 2px solid Gray; ">87,50</td><td class="centralizado-micro">6,00</td><td class="centralizado-micro">0</td><td class="centralizado-micro" style=" border-right: 2px solid Gray;  ">100,00</td><td class="centralizado-micro"></td><td class="centralizado-micro"></td><td class="centralizado-micro" style=" border-right: 2px solid Gray; "></td><td class="centralizado-micro-totais" style=" color: red">14,00</td><td class="centralizado-micro-totais">94,00</td></tr></tbody><tbody><tr class="classeZebrado"><td class="centralizado-micro-disciplina">LINGUA INGLESA </td><td class="centralizado-micro">6,50</td><td class="centralizado-micro">2</td><td class="centralizado-micro" style=" border-right: 2px solid Gray; ">92,86</td><td class="centralizado-micro">6,00</td><td class="centralizado-micro">8</td><td class="centralizado-micro" style=" border-right: 2px solid Gray;   color: rgb(0, 0, 0) ">80,67</td><td class="centralizado-micro"></td><td class="centralizado-micro"></td><td class="centralizado-micro" style=" border-right: 2px solid Gray; "></td><td class="centralizado-micro-totais" style=" color: rgb(0, 0, 0)">15,50</td><td class="centralizado-micro-totais">80,77</td></tr></tbody><tbody><tr class="classeZebrado"><td class="centralizado-micro-disciplina">LINGUA PORTUGUESA/LITERATURA </td><td class="centralizado-micro">8,50</td><td class="centralizado-micro">2</td><td class="centralizado-micro" style=" border-right: 2px solid Gray; ">96,15</td><td class="centralizado-micro">5,60</td><td class="centralizado-micro">0</td><td class="centralizado-micro" style=" border-right: 2px solid Gray;  ">100,00</td><td class="centralizado-micro"></td><td class="centralizado-micro"></td><td class="centralizado-micro" style=" border-right: 2px solid Gray; "></td><td class="centralizado-micro-totais" style=" color: rgb(0, 0, 0)">15,10</td><td class="centralizado-micro-totais">97,73</td></tr></tbody><tbody><tr class="classeZebrado"><td class="centralizado-micro-disciplina">LINGUAGENS APLICADAS Ã€S TECNOLOGIAS </td><td class="centralizado-micro">7,50</td><td class="centralizado-micro">4</td><td class="centralizado-micro" style=" border-right: 2px solid Gray; ">84,62</td><td class="centralizado-micro">6,00</td><td class="centralizado-micro">2</td><td class="centralizado-micro" style=" border-right: 2px solid Gray;  ">91,67</td><td class="centralizado-micro"></td><td class="centralizado-micro"></td><td class="centralizado-micro" style=" border-right: 2px solid Gray; "></td><td class="centralizado-micro-totais" style=" color: rgb(0, 0, 0)">16,50</td><td class="centralizado-micro-totais">88,00</td></tr></tbody><tbody><tr class="classeZebrado"><td class="centralizado-micro-disciplina">LINGUAGENS ARTISTICAS </td><td class="centralizado-micro">6,00</td><td class="centralizado-micro">2</td><td class="centralizado-micro" style=" border-right: 2px solid Gray; ">92,86</td><td class="centralizado-micro">5,00</td><td class="centralizado-micro">4</td><td class="centralizado-micro" style=" border-right: 2px solid Gray;  ">85,71</td><td class="centralizado-micro"></td><td class="centralizado-micro"></td><td class="centralizado-micro" style=" border-right: 2px solid Gray; "></td><td class="centralizado-micro-totais" style=" color: rgb(0, 0, 0)">16,00</td><td class="centralizado-micro-totais">89,29</td></tr></tbody><tbody><tr class="classeZebrado"><td class="centralizado-micro-disciplina">MATEMÃTICA </td><td class="centralizado-micro">5,20</td><td class="centralizado-micro">2</td><td class="centralizado-micro" style=" border-right: 2px solid Gray; ">88,89</td><td class="centralizado-micro">5,50</td><td class="centralizado-micro">0</td><td class="centralizado-micro" style=" border-right: 2px solid Gray;  ">100,00</td><td class="centralizado-micro"></td><td class="centralizado-micro"></td><td class="centralizado-micro" style=" border-right: 2px solid Gray; "></td><td class="centralizado-micro-totais" style=" color: red">10,70</td><td class="centralizado-micro-totais">93,33</td></tr></tbody><tbody><tr class="classeZebrado"><td class="centralizado-micro-disciplina">MATEMÃTICA APLICADA </td><td class="centralizado-micro">5,00</td><td class="centralizado-micro">0</td><td class="centralizado-micro" style=" border-right: 2px solid Gray; ">100,00</td><td class="centralizado-micro">5,50</td><td class="centralizado-micro">0</td><td class="centralizado-micro" style=" border-right: 2px solid Gray;  ">100,00</td><td class="centralizado-micro"></td><td class="centralizado-micro"></td><td class="centralizado-micro" style=" border-right: 2px solid Gray; "></td><td class="centralizado-micro-totais" style=" color: red">10,50</td><td class="centralizado-micro-totais">100,00</td></tr></tbody><tbody><tr class="classeZebrado"><td class="centralizado-micro-disciplina">PRÃTICAS ESPORTIVAS </td><td class="centralizado-micro">8,50</td><td class="centralizado-micro">0</td><td class="centralizado-micro" style=" border-right: 2px solid Gray; ">100,00</td><td class="centralizado-micro">6,50</td><td class="centralizado-micro">0</td><td class="centralizado-micro" style=" border-right: 2px solid Gray;  ">100,00</td><td class="centralizado-micro"></td><td class="centralizado-micro"></td><td class="centralizado-micro" style=" border-right: 2px solid Gray; "></td><td class="centralizado-micro-totais">15,00</td><td class="centralizado-micro-totais">100,00</td></tr></tbody><tbody><tr class="classeZebrado"><td class="centralizado-micro-disciplina">QUÃMICA </td><td class="centralizado-micro">5,00</td><td class="centralizado-micro">0</td><td class="centralizado-micro" style=" border-right: 2px solid Gray; ">100,00</td><td class="centralizado-micro">6,80</td><td class="centralizado-micro">2</td><td class="centralizado-micro" style=" border-right: 2px solid Gray;  ">92,31</td><td class="centralizado-micro"></td><td class="centralizado-micro"></td><td class="centralizado-micro" style=" border-right: 2px solid Gray; "></td><td class="centralizado-micro-totais" style=" color: red">11,80</td><td class="centralizado-micro-totais">96,00</td></tr></tbody><tbody><tr class="classeZebrado"><td class="centralizado-micro-disciplina">REFORÃ‡O ESCOLAR </td><td class="centralizado-micro"></td><td class="centralizado-micro">4</td><td class="centralizado-micro" style=" border-right: 2px solid Gray;  color: red ">69,23</td><td class="centralizado-micro"></td><td class="centralizado-micro">0</td><td class="centralizado-micro" style=" border-right: 2px solid Gray;  ">100,00</td><td class="centralizado-micro"></td><td class="centralizado-micro"></td><td class="centralizado-micro" style=" border-right: 2px solid Gray; "></td><td class="centralizado-micro-totais"></td><td class="centralizado-micro-totais">89,74</td></tr></tbody><tbody><tr class="classeZebrado"><td class="centralizado-micro-disciplina">SOCIOLOGIA APLICADA </td><td class="centralizado-micro">5,50</td><td class="centralizado-micro">0</td><td class="centralizado-micro" style=" border-right: 2px solid Gray; ">100,00</td><td class="centralizado-micro">6,00</td><td class="centralizado-micro">0</td><td class="centralizado-micro" style=" border-right: 2px solid Gray;  ">100,00</td><td class="centralizado-micro"></td><td class="centralizado-micro"></td><td class="centralizado-micro" style=" border-right: 2px solid Gray; "></td><td class="centralizado-micro-totais" style=" color: red">11,50</td><td class="centralizado-micro-totais">100,00</td></tr></tbody><tbody><tr class="classeZebrado"><td class="centralizado-micro-disciplina">TECNOLOGIA, INOVAÃ‡ÃƒO E AMBIENTE  </td><td class="centralizado-micro">9,00</td><td class="centralizado-micro">2</td><td class="centralizado-micro" style=" border-right: 2px solid Gray; ">95,83</td><td class="centralizado-micro">5,00</td><td class="centralizado-micro">14</td><td class="centralizado-micro" style=" border-right: 2px solid Gray;   color: red ">66,67</td><td class="centralizado-micro"></td><td class="centralizado-micro"></td><td class="centralizado-micro" style=" border-right: 2px solid Gray; "></td><td class="centralizado-micro-totais" style=" color: red">14,00</td><td class="centralizado-micro-totais">82,22</td></tr><tr><td class="tdFrequenciaGlobal" colspan="11">FrequÃªncia Global do Aluno na Turma:</td><td class="centralizado-micro-totais">90,37</td></tr></tbody> </table> <br>  <br> </div></div></div>
+        
+</div>
+    <br>
+    <br>
+    <div id="ctl00_cphFormulario_updatePanel3">
+	
+            <div id="ctl00_cphFormulario_divAssinatura" style="display: none;">
+                <table>
+                    <tbody><tr>
+                        <td style="border-top: 2px  solid; width: 300px" align="center">
+                            Assinatura do ResponsÃ¡vel
+                        </td>
+                        <td style="width: 100px">
+                        </td>
+                        <td style="border-top: 2px  solid; width: 300px" align="center">
+                            Assinatura do Diretor ou SecretÃ¡rio
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+        
+</div>
+    <br>
+    <br>
+    <div id="ctl00_cphFormulario_updatePanel2">
+	
+            <table>
+                <tbody><tr>
+                    <td>
+                        <div id="ctl00_cphFormulario_divImprimir" style="width: 85%;">
+                            <input type="image" src="../Images/bot_imprimir.png" value="Print" id="btnPrint">
+                        </div>
+                    </td>
+                    <td style="color: Red;">
+                        <div id="ctl00_cphFormulario_divPortaria">
+                            O boletim do aluno traz informaÃ§Ãµes das notas, das faltas e o percentual de frequÃªncia
+                            por disciplina a cada bimestre/trimestre.<br>
+                            O percentual de frequÃªncia Ã© contabilizado a partir do total de aulas dadas e do
+                            total de faltas do aluno no bimestre/trimestre.<br>
+                            O percentual de <b>FrequÃªncia Global do Aluno na Turma</b> Ã© resultado das frequÃªncias
+                            acumuladas bimestralmente/trimestralmente.<br>
+                            Para maiores informaÃ§Ãµes, consultar a
+                            <a id="ctl00_cphFormulario_hpPortaria" href="http://download.rj.gov.br/documentos/10112/2298861/DLFE-78181.pdf/PORTARIASEEDUCSUGENN419DE27.09.2013DO30.09.2013NORMASDEAVALIACAO.pdf" target="_blank">ResoluÃ§Ã£o SEEDUC nÂº 6303, de 08 de novembro de 2024</a>.
+                        </div>
+                    </td>
+                </tr>
+            </tbody></table>
+            <div id="ctl00_cphFormulario_divInformativo">
+                <table>
+                    <tbody><tr>
+                        <td colspan="2" style="color: Red;">
+                            Documento para simples conferÃªncia, sua autenticidade estÃ¡ condicionada Ã&nbsp; validaÃ§Ã£o
+                            do Diretor ou SecretÃ¡rio de sua Unidade Escolar.
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+        
+</div>
+
+    </div>
+    <br>
+    
+    <!-- Redes Sociais 
+    <div>
+        <table width="30%" align="center">
+            <tr>
+                <td colspan="3" align="center">
+                    <h3>
+                        Curta as redes sociais da Seeduc e acompanhe todas as novidades
+                    </h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://facebook.com/seeducrj" target="_blank">
+                        <img src="../Images/facebook_ce_pe.png" alt="Facebook" title="Facebook" /></a>
+                </td>               
+                <td>
+                    <a href="https://www.youtube.com/user/seeducrio" target="_blank">
+                        <img src="../Images/youtube_ce_pe.png" alt="Youtube" title="Youtube" /></a>
+                </td>
+                <td>
+                    <a href="https://www.instagram.com/seeducrj/" target="_blank">
+                        <img src="../Images/instagram_ce_pe.png" alt="Instagram" title="Instagram" /></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+                -->
+    
+    
+    <!-- FOOTER 
+    <div class="bas-inf">
+        <div class="bas">
+            &copy; Todos os direitos reservados -
+            2026
+            | versÃ£o
+            2.0.0.46728P</div>
+    </div>-->
+    
+    <div class="footer">
+        <div class="copyright">
+            © Todos os direitos reservados SEEDUC - RJ -
+            2026
+            | versÃ£o
+            
+        </div>
+        
+        
+        <!-- A Direita - Redes sociais -->
+        <div class="midias-sociais">
+            <div class="icons-midias">
+                <a href="https://www.facebook.com/seeducRJ" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+                <a href="https://www.instagram.com/seeducrj/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://www.youtube.com/channel/UCzhk54RUJtn1kwqU4LTNP-Q" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+            </div>
+        </div>          
+    </div>
+    
+    
+<script type="text/javascript">
+//<![CDATA[
+var __enabledControlArray =  new Array('ctl00_cphFormulario_txtFone');
+//]]>
+</script>
+
+<script language="JavaScript">
+if(typeof disableNavigationKeys == 'function') {
+ disableNavigationKeys(3);
+}
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+Sys.Application.initialize();
+//]]>
+</script>
+</form>
+
+
+</body>
